@@ -1,7 +1,7 @@
 # JavaScript_Practice
 
-This repository will contain solutions to the tasks from this site.
-https://www.w3resource.com/javascript-exercises/
+[This repository will contain solutions to the tasks from this site.]
+(https://www.w3resource.com/javascript-exercises/)
 
 
 ### Conditional Statement and Loops
