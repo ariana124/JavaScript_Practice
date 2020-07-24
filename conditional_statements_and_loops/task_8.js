@@ -9,23 +9,21 @@ function happyNumber(number) {
     for (let i = 0; i < 5; i++) {
         // The empty quotes typecastes the number into a string.
         let numStr = (number + '');
-        //console.log(numStr);
 
         // The method split, splits a string by each character.
         let splitNumbers = numStr.split('');
-        //console.log(splitNumbers);
 
         // Using the map method it squares each number in the array.
         let square = splitNumbers.map((i) => { 
             return Math.pow(i, 2);
         })
-        //console.log(square);
 
+        // Using the reduce method it adds the squared values together.
         let sumOfSquares = square.reduce((a, b) => {
             return a + b;
         })
-        //console.log(sumOfSquares);
 
+        // Reassign number.
         number = sumOfSquares;
     }
 
