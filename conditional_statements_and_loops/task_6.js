@@ -1,11 +1,11 @@
-// The function averageMark calculates the total sum of the array marks and returns a letter grade corresponding to the    marks total.
+// The function averageMark calculates the total sum of the array marks and returns a letter grade corresponding to the marks total.
 
 function averageMark(...marks) {
-    // Here we destructure the array into individual numbers.
+    // Here we use the spread operator to seperate the array into individual numbers.
     let arrayMarks = [...marks];
 
     // The reduce method takes the first value in the array and adds it to the next value until there's no more values to add.
-    let total = arrayMarks.reduce(function(a,b){
+    let total = arrayMarks.reduce(function(a,b) {
         if (typeof(a) !== 'number' || typeof(b) !== 'number') {
             alert("Mark is not a number.");
         }
