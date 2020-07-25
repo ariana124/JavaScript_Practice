@@ -6,6 +6,10 @@ function happyNumber(number) {
         return "Input is not a number."
     }
 
+    if (number < 0) {
+        return "Number must be a positive integer."
+    }
+
     for (let i = 0; i < 5; i++) {
         // The empty quotes typecastes the number into a string.
         let numStr = (number + '');
@@ -23,12 +27,12 @@ function happyNumber(number) {
             return a + b;
         })
 
-        // Reassign number.
+        // Reassigns number.
         number = sumOfSquares;
     }
 
     if (number === 1) {
-        return "A happy number";
+        return "A happy number :)";
     } else {
         return "Not a happy number :(";
     }
@@ -37,7 +41,7 @@ function happyNumber(number) {
 
 
 console.log(happyNumber(49));
-console.log(happyNumber(81));
+console.log(happyNumber(225));
 console.log(happyNumber(144));
 console.log(happyNumber('a'));
-console.log(happyNumber(43));
+console.log(happyNumber(-43));
