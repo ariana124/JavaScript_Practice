@@ -1,8 +1,8 @@
-// The function checkSign checks if the number has a negative sign in front of it.
+// The function checkSign returns an alert box deppending on if a number is negative or positive.
 
 function checkSign(num1, num2, num3) {
     // Checks to make sure all of the inputs are numbers.
-    if ( typeof(num1) !== "number" || typeof(num2) !== "number" || typeof(num3) !== "number" ) {
+    if (typeof(num1) !== "number" || typeof(num2) !== "number" || typeof(num3) !== "number") {
         return alert("One of the inputs is not a number");
     }
 
