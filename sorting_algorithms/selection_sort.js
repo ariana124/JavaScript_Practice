@@ -16,29 +16,25 @@ function findLowest(array) {
     }
     return lowest;
 }
-​
+
 // The function selectionSort sorts an array using the selection sort algorithm. [O(n^2)]
 
 function selectionSort(array) {
 
     let sortedArray = [];
-​
+
     while (array.length !== 0) {
         // Here we use our helper function findLowest to find the lowest value in the array.
         let lowest = findLowest(array);
-
+        // Filter creates a new array with all of the numbers that are not the current lowest.
         array = array.filter((num) => num !== lowest);
-​
-        let indexOfLowest = array.indexOf(lowest);
-
-        array.splice(indexOfLowest, 1);
-
+        // We add the current lowest value of the modified array to the end of the new sortedArray.
         sortedArray.push(lowest);
     }
     return sortedArray;
 }
-​
-​
+
+
 console.log(selectionSort([3, 2, 1, 5, 4]));
 console.log(selectionSort([7, 6, 11, -5, 0]));
 console.log(selectionSort([]));
