@@ -1,5 +1,6 @@
-// A program that creates an object and prints before and after deleting the rollno property.
-
+/**
+ * A program that creates an object and prints before and after deleting the rollno property.
+ */
 let student = {
     name : "David Rayy",
     sclass : "VI",
