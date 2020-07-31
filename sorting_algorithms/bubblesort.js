@@ -1,5 +1,8 @@
-// The bubbleSort function implements the bubble sorting algorithm. [O(n^2)]
-
+/**
+ * bubbleSort - function that sorts an array using the bubble sorting algorithm [O(n^2)]
+ * @array: an array of integers
+ * Return: a sorted array
+ */
 function bubbleSort(array) {
 
     // This outer loop goes through the entire array.

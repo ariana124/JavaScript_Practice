@@ -1,5 +1,8 @@
-// The function findLowest returns the lowest value in an array.
-
+/**
+ * findLowest - function that returns the lowest value in an array.
+ * @array: an array of integers
+ * Return: the lowest value in the array
+ */
 function findLowest(array) {
 
     let lowest = null;
@@ -17,8 +20,12 @@ function findLowest(array) {
     return lowest;
 }
 
-// The function selectionSort sorts an array using the selection sort algorithm. [O(n^2)]
 
+/**
+ * selectionSort - function that sorts an array using the selection sort algorithm [O(n^2)]
+ * @array: an array of integers
+ * Return: a sorted array
+ */
 function selectionSort(array) {
 
     let sortedArray = [];

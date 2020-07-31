@@ -1,5 +1,8 @@
-// The quicksort function sorts an array using the quicksort algorithm. [O(n * log n)]
-
+/**
+ * quicksort - function that sorts an array using the quicksort algorithm [O(n * log n)]
+ * @array: an array of integers
+ * Return: a sorted array
+ */
 function quicksort(array) {
     // If the array is empty or only has one element there is no need to sort.
     if (array.length < 2) {
