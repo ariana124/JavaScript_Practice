@@ -1,5 +1,8 @@
-// Complete the jumpingOnClouds function below.
-// c: an array of binary integers
+/**
+ * jumpingOnClouds - function that counts the number of jumps from the starting position to the last cloud(index)
+ * @c: an array of binary integers, 0 = safe clouds, 1 = clouds to avoid
+ * Return: the minimum number of jumps
+ */
 function jumpingOnClouds(c) {
 
     let jump = 0;
