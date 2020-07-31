@@ -1,4 +1,8 @@
-// The function countSwaps counts the number of swaps that happens in the bubble sorted array.
+/**
+ * countSwaps - function that counts the number of swaps that happens in the bubble sorted array.
+ * @a: an array
+ * Return: the swap count, first, and last elements in the array
+ */
 function countSwaps(a) {
 
     let counter = 0;
