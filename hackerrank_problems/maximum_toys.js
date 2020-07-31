@@ -1,17 +1,20 @@
-// Complete the maximumToys function below.
+/**
+ * maximumToys - function that counts the maximum number of toys that can be bought given
+ * @prices: an array of integers representing toy prices
+ * @budget: an integer representing the budget
+ * Return: the maximum number of toys
+ */
+function maximumToys(prices, budget) {
 
-function maximumToys(prices, toy) {
-    // [1,2,3,4,5] // budget 7
-    // 3
     let toyCount = 0;
 
-    let totalBudget = 0;
+    let totalAmount = 0;
 
     for (let i = 0; i < prices.length; i++) {
 
-        if (prices[i] <= toy) {
-            if ((totalBudget + prices[i]) <= toy ) {
-                totalBudget += prices[i];
+        if (prices[i] <= budget) {
+            if ((totalAmount + prices[i]) <= budget ) {
+                totalAmount += prices[i];
                 toyCount += 1;
             }
         }
@@ -19,3 +22,6 @@ function maximumToys(prices, toy) {
 
     return toyCount;
 }
+
+
+console.log(maximumToys([1, 12, 5, 111, 200, 1000, 10], 50));
