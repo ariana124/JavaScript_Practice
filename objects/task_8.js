@@ -1,5 +1,7 @@
-// The function clock prints out the current time down to the second.
-
+/**
+ * clock - function that prints out the current time down to the second
+ * Return: the time
+ */
 function clock() {
 
     // The function setInterval calls a function at specified intervals in milliseconds (1000 = 1 second).

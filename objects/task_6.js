@@ -1,5 +1,8 @@
-// The bubbleSort function implements the bubble sorting algorithm.
-
+/**
+ * bubbleSort - function that implements the bubble sorting algorithm
+ * @array: an array of integers
+ * Return: a sorted array
+ */
 function bubbleSort(array) {
 
     // This outer loop goes through the entire array.
