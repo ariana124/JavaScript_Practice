@@ -1,5 +1,8 @@
-// The function averageMark calculates the total sum of the array marks and returns a letter grade corresponding to the marks total.
-
+/**
+ * averageMark - function that calculates the total sum of an array
+ * @marks: an array of integers
+ * Return: the corresponding letter grade depending on the marks total
+ */
 function averageMark(...marks) {
     // Here we use the spread operator to seperate the array into individual numbers.
     let arrayMarks = [...marks];
@@ -20,8 +23,12 @@ function averageMark(...marks) {
     grade(average);
 }
 
-// The grade function checks what range the average score is in and creates an alert with the corresponding letter.
 
+/**
+ * grade - function that checks ehat range the average score is in
+ * @average: an integer
+ * Return: creates an alert box with the corresponding letter
+ */
 function grade(average) {
 
     if (average <= 100 && average >= 90) {
