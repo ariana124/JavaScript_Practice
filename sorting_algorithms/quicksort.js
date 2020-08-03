@@ -27,8 +27,7 @@ function quicksort(array) {
         less = quicksort(less);
         greater = quicksort(greater);
 
-        let sortedArray = less.concat(pivot, greater);
-        //let sortedArray = [...less, pivot, ...greater]; This also works.
+        let sortedArray = [...less, pivot, ...greater];
 
         return sortedArray;
     }
