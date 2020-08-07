@@ -6,14 +6,15 @@
  */
 function checkProperty(obj, property) {
 
-    // let check = obj.hasOwnProperty(property);
-    // return check;
+    let check = obj.hasOwnProperty(property);
+    return check;
 
-    if (property in obj) {
-        return true;
-    } else {
-        return false;
-    }
+    // The alternate way to check without using the built in function.
+    // if (property in obj) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 
 }
 
