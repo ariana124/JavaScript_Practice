@@ -23,7 +23,7 @@ function sumOfMultiples(factors, target) {
             current_multiple += factor;
         }
     }
-  
+    
     // Using the spread operator we convert the set into an array.
     multiples = [...multiples];
     
